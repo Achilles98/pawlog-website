@@ -1,125 +1,17 @@
 <!doctype html>
-<html lang="en" data-lang="en">
+<html lang="en" data-lang="en" data-title-en="Privacy Policy · Pawlog" data-title-el="Πολιτική απορρήτου · Pawlog">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy Policy · Pawlog</title>
 <meta name="description" content="How Pawlog handles your data and your pet's.">
-<!-- English and Greek. The Greek text matches Pawlog/Resources/privacy.md, which the app shows. Keep them in step. -->
-<style>
-  :root {
-    color-scheme: light dark;
-    --ground: #FBF7F2;
-    --card: #FFFFFF;
-    --ink: #2F2A26;
-    --body: #4A423B;
-    --muted: #6B6158;
-    --accent: #B5562C;
-    --link: #A94E27;
-    --tint: #F7E1D3;
-    --rule: rgba(47, 42, 38, 0.08);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --ground: #1C1917;
-      --card: #26221F;
-      --ink: #F5EFE9;
-      --body: #D9D0C7;
-      --muted: #A89A8C;
-      --accent: #E07A4B;
-      --link: #F08D5E;
-      --tint: #3A2A21;
-      --rule: rgba(245, 239, 233, 0.1);
-    }
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--ground);
-    color: var(--body);
-    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-  main {
-    max-width: 680px;
-    margin: 0 auto;
-    padding: max(40px, env(safe-area-inset-top)) 20px max(48px, env(safe-area-inset-bottom));
-  }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--ink);
-    font: 800 19px/1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif;
-    margin-bottom: 28px;
-  }
-  .brand svg { width: 36px; height: 36px; flex: none; }
-  h1 {
-    color: var(--ink);
-    font: 800 clamp(30px, 7vw, 38px)/1.12 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif;
-    letter-spacing: -0.02em;
-    margin: 0 0 8px;
-  }
-  .updated { color: var(--muted); font-size: 15px; margin: 0 0 20px; }
-  .lead {
-    background: var(--tint);
-    color: var(--ink);
-    border-radius: 20px;
-    padding: 18px 20px;
-    margin: 0 0 28px;
-  }
-  section {
-    background: var(--card);
-    border-radius: 22px;
-    padding: 20px 22px;
-    margin: 0 0 14px;
-    box-shadow: 0 1px 2px rgba(80, 50, 20, 0.05);
-  }
-  h2 {
-    color: var(--ink);
-    font: 800 19px/1.3 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif;
-    margin: 0 0 8px;
-  }
-  p { margin: 0 0 12px; }
-  section p:last-child { margin-bottom: 0; }
-  a { color: var(--link); text-underline-offset: 2px; }
-  footer {
-    color: var(--muted);
-    font-size: 14px;
-    text-align: center;
-    margin-top: 32px;
-  }
-  .top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 28px;
-  }
-  .top .brand { margin-bottom: 0; }
-  .langs {
-    display: inline-flex;
-    background: var(--card);
-    border-radius: 999px;
-    padding: 3px;
-    box-shadow: 0 1px 2px rgba(80, 50, 20, 0.05);
-  }
-  .langs a {
-    color: var(--muted);
-    font: 700 14px/1 ui-rounded, "SF Pro Rounded", -apple-system, sans-serif;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 999px;
-  }
-  .langs a[aria-current="true"] { background: var(--tint); color: var(--ink); }
-  html[data-lang="en"] article[lang="el"],
-  html[data-lang="el"] article[lang="en"] { display: none; }
-</style>
+<link rel="stylesheet" href="site.css">
+<!-- The Greek text matches Pawlog/Resources/privacy.md, which the app shows. Keep them in step. -->
 </head>
 <body>
 <main>
   <div class="top">
-    <div class="brand">
+    <a class="brand" href="index.html" data-keep-lang>
     <svg viewBox="0 0 36 36" aria-hidden="true">
       <circle cx="18" cy="18" r="18" fill="#B5562C"/>
       <g fill="#FBF7F2">
@@ -131,7 +23,7 @@
       </g>
     </svg>
     Pawlog
-    </div>
+    </a>
     <nav class="langs" aria-label="Language / Γλώσσα">
       <a href="?lang=en" data-set="en" hreflang="en">EN</a>
       <a href="?lang=el" data-set="el" hreflang="el">ΕΛ</a>
@@ -181,7 +73,11 @@
       <p>You can delete all data on your device by deleting the app, and the family's data by leaving the family. To access, correct or delete data held on our server under the GDPR, write to us at <a href="mailto:achillestzeneto@gmail.com">achillestzeneto@gmail.com</a>. You also have the right to lodge a complaint with the <a href="https://www.dpa.gr/en">Hellenic Data Protection Authority</a>.</p>
     </section>
 
-    <footer>Pawlog · A health diary for pets</footer>
+
+    <footer>
+      <nav><a href="index.html" data-keep-lang>Home</a><a href="support.html" data-keep-lang>Support</a><a href="privacy.html" data-keep-lang>Privacy Policy</a></nav>
+      Pawlog · A health diary for pets
+    </footer>
   </article>
 
   <article lang="el">
@@ -227,38 +123,13 @@
       <p>Μπορείς να διαγράψεις όλα τα τοπικά δεδομένα διαγράφοντας την εφαρμογή, και τα δεδομένα της οικογένειας αποχωρώντας από αυτήν. Για πρόσβαση, διόρθωση ή διαγραφή στοιχείων από τον server, σύμφωνα με τον GDPR, γράψε μας στο <a href="mailto:achillestzeneto@gmail.com">achillestzeneto@gmail.com</a>. Έχεις επίσης δικαίωμα καταγγελίας στην <a href="https://www.dpa.gr">Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα</a>.</p>
     </section>
 
-    <footer>Pawlog · Ημερολόγιο υγείας για κατοικίδια</footer>
+
+    <footer>
+      <nav><a href="index.html" data-keep-lang>Αρχική</a><a href="support.html" data-keep-lang>Υποστήριξη</a><a href="privacy.html" data-keep-lang>Απόρρητο</a></nav>
+      Pawlog · Ημερολόγιο υγείας για κατοικίδια
+    </footer>
   </article>
 </main>
-<script>
-  // Language: ?lang=el|en, then the last choice, then the browser's language. English if nothing matches.
-  (function () {
-    var titles = { en: "Privacy Policy · Pawlog", el: "Πολιτική απορρήτου · Pawlog" };
-    function stored() { try { return localStorage.getItem("pawlog-lang"); } catch (e) { return null; } }
-    function remember(l) { try { localStorage.setItem("pawlog-lang", l); } catch (e) {} }
-    function apply(l) {
-      var root = document.documentElement;
-      root.lang = l;
-      root.setAttribute("data-lang", l);
-      document.title = titles[l];
-      document.querySelectorAll(".langs a").forEach(function (a) {
-        a.setAttribute("aria-current", a.dataset.set === l ? "true" : "false");
-      });
-    }
-    var param = new URLSearchParams(location.search).get("lang");
-    var browser = (navigator.language || "").toLowerCase().indexOf("el") === 0 ? "el" : "en";
-    var lang = titles[param] ? param : (titles[stored()] ? stored() : browser);
-    apply(lang);
-    document.querySelectorAll(".langs a").forEach(function (a) {
-      a.addEventListener("click", function (e) {
-        e.preventDefault();
-        var l = a.dataset.set;
-        apply(l);
-        remember(l);
-        history.replaceState(null, "", "?lang=" + l);
-      });
-    });
-  })();
-</script>
+<script src="site.js"></script>
 </body>
 </html>
